@@ -2,7 +2,6 @@ import "./globals.css";
 
 export const metadata = {
   title: "BellaThrive AI",
-  description: "Cinematic, futuristic Voice AI website",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
