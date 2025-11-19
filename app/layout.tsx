@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "BellaThrive AI",
   description: "Cinematic, futuristic Voice AI website",
