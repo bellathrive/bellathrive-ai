@@ -336,7 +336,7 @@ function About() {
 
         {/* Founder photos */}
         <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-          <figure className="relative rounded-2xl overflow-hidden border border-blue-900/60 bg-slate-900/40 h-64 md:h-80">
+          <figure className="relative rounded-2xl overflow-hidden border border-blue-900/60 bg-slate-900/40 h-80 md:h-80">
             <img
               src="/images/emery.jpg"
               alt="Emery — Co-founder of BellaThrive AI"
@@ -347,7 +347,7 @@ function About() {
             </figcaption>
           </figure>
 
-          <figure className="relative rounded-2xl overflow-hidden border border-blue-900/60 bg-slate-900/40 h-64 md:h-80">
+          <figure className="relative rounded-2xl overflow-hidden border border-blue-900/60 bg-slate-900/40 h-80 md:h-80">
             <img
               src="/images/camilla.jpg"
               alt="Camilla — Co-founder of BellaThrive AI"
