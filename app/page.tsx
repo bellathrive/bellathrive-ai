@@ -485,36 +485,48 @@ function Contact() {
   const [error, setError] = useState<string | null>(null);
   const formRef = useRef<HTMLFormElement | null>(null);
 
-  const onSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formRef.current) return;
+const onSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (!formRef.current) return;
 
-    setLoading(true);
-    setSent(false);
-    setError(null);
+  setLoading(true);
+  setSent(false);
+  setError(null);
 
-    const formData = new FormData(formRef.current);
+  const formData = new FormData(formRef.current);
 
-    try {
-      // TODO: replace `YOUR_FORM_ID` with your actual Formspree form ID
-      const res = await fetch("https://formspree.io/f/xeongnkv", {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: formData,
-      });
+  try {
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      company: formData.get("company"),
+      message: formData.get("message"),
+    };
 
-      if (res.ok) {
-        formRef.current.reset();
-        setSent(true);
-      } else {
-        setError("Something went wrong. Please try again or email us directly.");
-      }
-    } catch (err) {
+    const res = await fetch("https://formspree.io/f/xeongnkv", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (res.ok) {
+      formRef.current.reset();
+      setSent(true);
+    } else {
+      const data = await res.json().catch(() => null);
+      console.error("Formspree error:", data || res.statusText);
       setError("Something went wrong. Please try again or email us directly.");
-    } finally {
-      setLoading(false);
     }
-  };
+  } catch (err) {
+    console.error("Form submit error:", err);
+    setError("Something went wrong. Please try again or email us directly.");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <section id="contact" className="relative py-28 px-6 bg-black text-blue-100">
