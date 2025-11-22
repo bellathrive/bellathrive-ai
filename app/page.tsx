@@ -503,7 +503,7 @@ const onSubmit = async (e: React.FormEvent) => {
       message: formData.get("message"),
     };
 
-    const res = await fetch("https://formspree.io/f/xeongnkv", {
+    const res = await fetch("https://formspree.io/f/xldvjdbl", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
