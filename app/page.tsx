@@ -183,7 +183,7 @@ function Hero() {
         BellaThrive AI
       </motion.h1>
       <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-        Elevating customer experience with intelligent, natural Voice &amp; Conversational AI — never miss
+        Elevating customer experience with intelligent, natural Voice AI — never miss
         another call or message, follow up faster, and reduce repetitive workloads, all 24/7.
       </p>
       <div className="flex gap-4 justify-center">
