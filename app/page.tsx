@@ -183,7 +183,7 @@ function Hero() {
         BellaThrive AI
       </motion.h1>
       <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-        Elevating customer experience with blazing-fast, intelligent Voice &amp; Conversational AI — never miss
+        Elevating customer experience with intelligent, natural Voice &amp; Conversational AI — never miss
         another call or message, follow up faster, and reduce repetitive workloads, all 24/7.
       </p>
       <div className="flex gap-4 justify-center">
@@ -214,12 +214,12 @@ function Mission() {
     },
     {
       title: "Proactive Capture & Fast Follow-up",
-      desc: "Structure intake, qualify leads, and trigger workflows automatically.",
+      desc: "Structure intake, qualify leads, and book appointments automatically.",
       icon: <Sparkles size={22} />,
     },
     {
       title: "Reduce Team Load, Keep the Human",
-      desc: "Offload repetitive calls while your team focuses on high-value conversations.",
+      desc: "Offload repetitive calls while your team focuses on tasks requiring a human touch.",
       icon: <Users size={22} />,
     },
   ];
@@ -301,7 +301,7 @@ function About() {
           <p className="text-lg font-medium text-blue-100 mb-6">Emery &amp; Camilla</p>
 
           <p className="text-gray-300 leading-relaxed text-lg mb-4">
-            We&apos;re a husband-and-wife team building voice and conversational AI solutions for service businesses
+            We&apos;re a husband-and-wife team building voice and conversational AI solutions for medical practices and service businesses
             across the US.
           </p>
 
@@ -339,22 +339,22 @@ function About() {
           <figure className="relative rounded-2xl overflow-hidden border border-blue-900/60 bg-slate-900/40 h-80 md:h-80">
             <img
               src="/images/emery.jpg"
-              alt="Emery — Co-founder of BellaThrive AI"
+              alt="Emery — Co-Founder of BellaThrive AI"
               className="h-full w-full object-cover object-center"
             />
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-left">
-              <p className="text-sm font-medium text-blue-100">Emery Co-founder</p>
+              <p className="text-sm font-medium text-blue-100">Emery Co-Founder</p>
             </figcaption>
           </figure>
 
           <figure className="relative rounded-2xl overflow-hidden border border-blue-900/60 bg-slate-900/40 h-80 md:h-80">
             <img
               src="/images/camilla.jpg"
-              alt="Camilla — Co-founder of BellaThrive AI"
+              alt="Camilla — Co-Founder of BellaThrive AI"
               className="h-full w-full object-cover object-center"
             />
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-left">
-              <p className="text-sm font-medium text-blue-100">Camilla Co-founder</p>
+              <p className="text-sm font-medium text-blue-100">Camilla Co-Founder</p>
             </figcaption>
           </figure>
         </div>
@@ -379,7 +379,7 @@ function Process() {
     {
       num: "03",
       title: "Integrate",
-      desc: "Calendar integration with platforms like Google Calendar and Apple Calendar. Prompts, routing, and guardrails are refined.",
+      desc: "Calendar integration with platforms like Dentrix, Google Calendar and Apple Calendar. Prompts, routing, and guardrails are refined.",
     },
     {
       num: "04",
